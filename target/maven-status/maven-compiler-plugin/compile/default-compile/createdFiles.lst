@@ -9,6 +9,7 @@ Login\Token$5.class
 ventanaPrincipal\VentanaPrincipal$18.class
 ventanaPrincipal\punto_Venta$4.class
 Ventanas_progreso\Progreso$3.class
+ventanaPrincipal\ButtonEditor$1.class
 ventanaPrincipal\VentanaPrincipal$1.class
 ventanaPrincipal\punto_Venta$12.class
 ventanaPrincipal\VentanaPrincipal$22.class
@@ -18,6 +19,7 @@ ventanaPrincipal\VentanaPrincipal$4.class
 ventanaPrincipal\punto_Venta.class
 Ventana_productos\Ventana_ingreso_productos$3.class
 ventanaPrincipal\punto_Venta$13.class
+ventanaPrincipal\renderTabla.class
 Ventanas_progreso\Progreso$2.class
 Ventana_productos\Ventana_ingreso_productos$4.class
 Ventana_productos\Ventana_ingreso_productos.class
@@ -26,9 +28,11 @@ Login\Diseño_login$6.class
 ventanaPrincipal\VentanaPrincipal$3.class
 ventanaPrincipal\VentanaPrincipal$13.class
 ventanaPrincipal\VentanaPrincipal.class
+ventanaPrincipal\DateLabelFormatter.class
 Login\reset_password\Nueva_contraseña$4.class
 Login\reset_password\Nueva_contraseña.class
 Login\Srips_Token\EnviarCorreo$1.class
+ventanaPrincipal\VentanaPrincipal$23.class
 Login\Token$2.class
 Ventana_productos\Ventana_ingreso_productos$5.class
 Login\crearCuenta$9.class
@@ -46,6 +50,7 @@ ventanaPrincipal\punto_Venta$3.class
 ventanaPrincipal\VentanaPrincipal$5.class
 Login\Token$1.class
 ventanaPrincipal\VentanaPrincipal$2.class
+ventanaPrincipal\TrayNotification.class
 Login\Diseño_login$5.class
 Ventana_productos\Ventana_ingreso_productos$2.class
 Login\crearCuenta$1.class
@@ -56,6 +61,7 @@ Login\crearCuenta$7.class
 Login\crearCuenta$4.class
 ventanaPrincipal\VentanaPrincipal$11.class
 ventanaPrincipal\punto_Venta$6.class
+ventanaPrincipal\ButtonRenderer.class
 Login\Token$4.class
 Login\reset_password\Nueva_contraseña$2.class
 Login\reset_password\Nueva_contraseña$5.class
@@ -75,9 +81,11 @@ Login\reset_password\Nueva_contraseña$1.class
 ventanaPrincipal\punto_Venta$9.class
 Login\Diseño_login.class
 ventanaPrincipal\VentanaPrincipal$6.class
+ventanaPrincipal\TrayNotification$1.class
 ventanaPrincipal\VentanaPrincipal$16.class
 ventanaPrincipal\VentanaPrincipal$21.class
 ventanaPrincipal\punto_Venta$2.class
+ventanaPrincipal\ButtonEditor.class
 Login\crearCuenta$5.class
 ventanaPrincipal\punto_Venta$11.class
 ventanaPrincipal\punto_Venta$8.class

@@ -17,9 +17,9 @@ public class conexion {
     public static String password_gmail = "xjmg fzza wnzq kgjb"; // contraseña de Gmail de la empresa
     
     
-    private static final String URL = "jdbc:mysql://localhost:3306/inventario?serverTimezone=America/Bogota&zeroDateTimeBehavior=CONVERT_TO_NULL";
-    private static final String USER = "root"; // Tu usuario MySQL
-    private static final String PASSWORD = ""; // Tu contraseña MySQL
+    public static final String URL = "jdbc:mysql://localhost:3306/inventario?serverTimezone=America/Bogota&zeroDateTimeBehavior=CONVERT_TO_NULL";
+    public static final String USER = "root"; // Tu usuario MySQL
+    public static final String PASSWORD = ""; // Tu contraseña MySQL
     
     
     //tabla administrador
@@ -37,6 +37,38 @@ public class conexion {
     public static String ColubnaCorreoAdministrador = "correo_administrador";
     public static String ColubnaRotAdministrador = "rot";
     public static String ColubnaContraseñaAdministrador = "contraseña";
+    
+    //tabla producto
+    public static String nombreTablaProducto ="producto";
+    public static String isProducto = "idProducto";
+    public static String fechaEntradaProducto = "fechaentrada";
+    public static String fechaFabricacion = "fechaFabricacion";
+    public static String fechaVencimiento = "fechaVencimiento";
+    public static String nombreProducto = "nombre";
+    public static String precioProducto = "precio";
+    public static String categoriaProducto = "categoria";
+    public static String cantidadProducto = "cantidad";
+    public static String proveedorProducto = "proveedor";
+    public static String numeroLoteProducto = "numeroLote";
+    public static String descripcionProducto ="descripcion";
+    public static String codigoProducto = "codigoProducto";
+    
+    //tabla proveedor
+    public static String nombreTablaProveedor = "proveedor";
+    public static String idProveedor = "id_proveedor";
+    public static String nombreEmpresaProveedor ="nombreEmpresa";
+    public static String numeroTelefonoEmpresaProveedor ="Numero_telefono_empresa";
+    public static String numeroTelefonoProveedor ="Numero_telefono";
+    public static String direccioProveedor ="Direccion";
+    public static String correoProveedor = "Correo electronico";
+    
+    //tabla categoria
+    public static String tablaCategoria = "categoria";
+    public static String idcategoria ="idcategoria";
+    public static String nombreCategoria="nombre";
+    public static String descripcionCategoria="descripcion";
+    public static String estadoCategoria="estado";
+    
 
     // Método para obtener la conexión a la base de datos
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
