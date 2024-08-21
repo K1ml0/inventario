@@ -5,6 +5,10 @@
 
 package Login.reset_password;
 //ventana para crear la nueva contraseña usuario
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  *
  * @author juan
@@ -68,6 +72,11 @@ public class Nueva_contraseña extends javax.swing.JFrame {
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
+            }
+        });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField1KeyReleased(evt);
             }
         });
 
@@ -260,7 +269,41 @@ public class Nueva_contraseña extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+    
+    private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
+        int contador = 0;
+        String contraseña1 = jTextField1.getText();
+        boolean isupercase = false;
+        boolean isgreater = false;
+        boolean isspecialcharacter = false;
+        for (char c : contraseña1.toCharArray()) {
+           
+            
+            if (contraseña1.length() > 7) {
+                isgreater = true;
+            }if (Character.isUpperCase(c)) {
+                isupercase = true;
+            }
+            
+        }if(isupercase == true){
+            jProgressBar1.setValue(contador += 25);
 
+        }if(isgreater == true){
+            jProgressBar1.setValue(contador += 25);
+        }if (!specialcharacter(contraseña1)){
+            jProgressBar1.setValue(contador += 50);
+        }
+        else{
+            jProgressBar1.setValue(0);
+        }
+        
+    }//GEN-LAST:event_jTextField1KeyReleased
+    public static boolean specialcharacter(String texto){
+        String caracteresespeciales =  "[?=.*[@#$%^&+=])(?=\\S+$]";
+        Pattern pattern = Pattern.compile(caracteresespeciales);
+        Matcher matcher = pattern.matcher(texto);
+        return matcher.find();
+    }
     /**
      * @param args the command line arguments
      */
